@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Booking {% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+    <img src="{% static '/images/dr2.jpg' %}" alt="responsive webite" class="img-fluid" style="height: 600px; padding-top: 50px;">
+    <div class="wrap" style=" padding: 10px;">
+        <div class="form-header">
+            <h2>Book AN APPOINMENT</h2>
+        </div>
+        <br>
+        <div style="color: #40a9da; text-align: center;">
+            {% for msg in messages %}
+                {{msg}}
+            {% endfor %}
+        </div>
+        <br>
+
+        <form action="" method="POST" class="">
+          
+            {% csrf_token %}
+            {{ form|crispy }}
+
+            <tr class="form-body">
+                <td class="fieldset"></td>
+                <br>
+                <td class="form-footer">
+                    <center><button  class="confirm-button">submit</a></button></center>
+                </td>
+            </tr>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

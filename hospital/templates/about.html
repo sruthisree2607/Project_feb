@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row"  style="margin: 125px 125px 200px;">
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <img src="{% static '/images/mims.jpg' %}" alt="responsive webite" class="img-fluid" style="height: 400px;">
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6">
+        <h1 style="color: #40a9da; margin-bottom: 1rem; font-weight:bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Aster MIMS</h1>
+       
+        <p style="text-align: justify;">Malabar Institute of Medical Sciences Ltd (MIMS), 
+          the well-acclaimed health enterprise and one of the leading healthcare systems in Malabar, 
+          assures comprehensive health care services with a global standard. The 600-bedded multispecialty 
+          hospital is renowned for its excellent medical expertise, nursing care and quality diagnostic services.
+           By focusing on the idea of caring mission with a global vision, Aster MIMS - one of the best hospital in Calicut, 
+           stresses on improving the health of the community by setting up the standard of excellence in medical education,
+            research and clinical care. Aiming a patient- centric care, 
+          the hospital is utilizing enhanced lifesaving technologies for leveraging the level of cure.</p>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}
